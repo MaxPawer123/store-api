@@ -7,7 +7,7 @@ from app.utils.decorators import jwt_required, roles_required
 product_bp = Blueprint("product", __name__)
 
 
-
+#crear por partes
 #Ruta para obtener la lista de productos
 @product_bp.route("/products", methods=["GET"])
 @jwt_required
