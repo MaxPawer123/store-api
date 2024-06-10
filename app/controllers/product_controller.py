@@ -2,7 +2,6 @@ from flask import Blueprint, request, jsonify
 from app.models.product_model import Product
 from app.views.product_view import render_product_detail, render_product_list
 from app.utils.decorators import jwt_required, roles_required
-
 #Crear un blueprint para el controlador
 product_bp = Blueprint("product", __name__)
 
@@ -41,6 +40,7 @@ def create_product():
     #Validadcion simple de datos de entrada
     if not name or not description or not price or not stock:
         return jsonify({"error":"Faltan datos requeridos"}), 400
+   
     #Crear un nuevo producto
     product = Product(name=name, description=description, price=price, stock=stock)
     product.save()

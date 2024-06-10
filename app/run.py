@@ -1,10 +1,8 @@
 from flask import Flask
 from flask_jwt_extended import JWTManager
 from flask_swagger_ui import get_swaggerui_blueprint
-
 from app.controllers.product_controller import product_bp
 from app.controllers.user_controller import user_bp
-
 from app.database import db
 
 app = Flask(__name__)
