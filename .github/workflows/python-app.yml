@@ -47,5 +47,5 @@ jobs:
     - name: Deploy to DigitalOcean App Platform
       uses: digitalocean/app_action@v1.1.5
       with:
-        app_name: seashell-app
+        app_name: lionfish-app
         token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
