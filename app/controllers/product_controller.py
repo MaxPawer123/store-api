@@ -79,5 +79,6 @@ def delete_product(id):
     product.delete()
     
     #Respuesta vacia con codigo de estado 204
+    #fsdfsdfds
     return "", 204
 
